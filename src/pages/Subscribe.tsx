@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import imgUrl from '../../src/assets/code-mockup.png'
 
 
 export function Subscribe() {
@@ -74,7 +75,7 @@ export function Subscribe() {
 
                 </div>
             </div>
-            <img src="/src/assets/code-mockup.png" alt="code-mockaup" className="mt-10" />
+            <img src={imgUrl} alt="code-mockaup" className="mt-10" />
             <div className="w-full flex items-center justify-center">
                 <Footer />
             </div>
